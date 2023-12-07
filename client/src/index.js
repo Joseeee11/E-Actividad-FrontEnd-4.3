@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom/client';
 
 //importamos CSS
 import './CSS/index.css';
+import './CSS/modoOscuro.css';
 
 //importamos complementos
 // import {Buscar} from './Buscador.js';

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
+import { CambiarModo } from './ModoOscuro';
 import IconoMenu from './media/iconos/bars-solid.svg';
 import IconoX from './media/iconos/x-solid.svg';
-import IconoClaro from './media/iconos/sun-solid.svg'
 
 export function Header({enlaces}) {
 
@@ -10,8 +10,10 @@ export function Header({enlaces}) {
 
     function MenuAbrir() {
         setMenu(true);
+        console.log('abriendo menu');
     }
     function MenuCerrar() {
+        console.log('cerrando menu');
         setMenu(false);
     }
 
@@ -19,7 +21,7 @@ export function Header({enlaces}) {
         <section className='header-principal'>
             <button onClick={() => MenuAbrir()}> <img src={IconoMenu} alt='Abrir Menú'/></button>
             <h1>TusPelis</h1>
-            <button> <img src={IconoClaro} alt='Abrir Menú'/></button>
+            <CambiarModo/>
         </section>
         <section className={menu === true ? 'menu abierto' : 'menu cerrado'}>
             <button onClick={() => MenuCerrar()}> <img src={IconoX} alt='Cerrar Menú'/> </button>
