@@ -11,7 +11,9 @@
 body {
   background-color: #c5ccfc;
 }
-
+h3:hover {
+  cursor: pointer;
+}
 
 /* RESPONSIVE */
 @media (max-width: 720px) and (max-height: 1280px) {

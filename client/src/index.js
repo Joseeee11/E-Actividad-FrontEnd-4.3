@@ -8,13 +8,13 @@ import ReactDOM from 'react-dom/client';
 import './CSS/index.css';
 
 //importamos complementos
-import {VerPelis} from './API.js';
+// import {Buscar} from './Buscador.js';
+import {Main} from './Contenido'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <h1>Estamos en TusPelis</h1>
-    <VerPelis/>
+    <Main/>
 
   </>
 );
