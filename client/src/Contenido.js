@@ -4,6 +4,9 @@ import {useState} from 'react';
 import {Header} from './Header';
 import {Inicio} from './Inicio';
 import {Buscar} from './Buscador';
+import ContactForm from './Form';
+import Footer from './Footer';
+import Info from './LadingInfo';
 
 
 
@@ -18,8 +21,9 @@ export function Main() {
     return <>
         <Header enlaces={enlaces} />
         <section>
-            {activo === 1 ? <Inicio/> : <Buscar/>}
+            {activo === 1 ?  <><Info/> <ContactForm/></> : <Buscar/>}
         </section>
+        <Footer/>
     </>
 
 }
