@@ -3,12 +3,12 @@ import "./CSS/Lading.css"
 
 const ContactForm = () => {
  const [form, setForm] = useState({
-    name: '',
+    nombre: '',
     email: '',
-    phone: '',
-    date: '',
-    importance: '',
-    question: '',
+    telefono: '',
+    fecha: '',
+    importancia: '',
+    pregunta: '',
  });
 
  const handleChange = (e) => {
@@ -26,9 +26,9 @@ const ContactForm = () => {
       <h2>Contactanos</h2>
       <input
         type="text"
-        name="name"
+        name="nombre"
         placeholder="Nombre y Apellido"
-        value={form.name}
+        value={form.nombre}
         onChange={handleChange}
       />
       <input
@@ -39,32 +39,32 @@ const ContactForm = () => {
         onChange={handleChange}
       />
       <input
-        type="text"
-        name="phone"
+        type="tel"
+        name="telefono"
         placeholder="Número de Teléfono"
-        value={form.phone}
+        value={form.telefono}
         onChange={handleChange}
       />
       <input
         type="date"
-        name="date"
-        value={form.date}
+        name="fecha"
+        value={form.fecha}
         onChange={handleChange}
       />
       <select
-        name="importance"
-        value={form.importance}
+        name="importancia"
+        value={form.importancia}
         onChange={handleChange}
       >
         <option value="">Importancia de tu Pregunta</option>
-        <option value="baja">Baja</option>
-        <option value="media">Media</option>
-        <option value="alta">Alta</option>
+        <option value="Baja">Baja</option>
+        <option value="Media">Media</option>
+        <option value="Alta">Alta</option>
       </select>
       <textarea
-        name="question"
+        name="pregunta"
         placeholder="Haz tu Pregunta"
-        value={form.question}
+        value={form.pregunta}
         onChange={handleChange}
       />
       <button type="submit">¡ENVIAR!</button>

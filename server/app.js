@@ -7,6 +7,7 @@ var cors = require('cors');
 
 var db = require('./conection/db');
 var comentariosRouter = require('./routes/comentarios.r');
+var contactosRouter = require('./routes/contactos.r');
 
 var app = express();
 
@@ -22,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 app.use('/comentarios', comentariosRouter);
+app.use('/contactos', contactosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
