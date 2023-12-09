@@ -51,6 +51,134 @@ header {
 .header-principal img{
   width: 4.5vh;
 }
+/* Explorador */
+.GeneroExplorador{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 2%;
+  margin: 2%;
+  background-color: #454e8f;
+}
+.GenerosLista{
+  margin-left: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem ;
+}
+.CarruselExplorador{
+  padding: 2vh 0;
+}
+.TarjetaExplorar{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 180px;
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #fff ;
+  margin:0 1vw;
+  transition: 0.4s;
+}
+.TarjetaExplorar:hover{
+  transform: scale(1.1);
+}
+.TituloH3{
+  padding: 0 15px;
+}
+.TituloTarjeta{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  position: relative;
+  width: 100%;
+  padding: 5px ;
+  margin-bottom: 10px;
+  background-image: radial-gradient(circle at center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.75) , rgba(0, 0, 0, 0) );
+}
+.TarjetaExplorar h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.CarruselExplorador{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+
+.IzquierdaExplorarDiv{
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0) );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20vh;
+  left: 0px;
+  width: 6vw;
+  height: 10vh;
+  border-radius: 30%;
+  z-index: 50;
+  
+}
+.IzquierdaExplorarDiv:hover{
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.9) ,rgba(0, 0, 0, 1)  );
+}
+.IzquierdaExplorar{
+  color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.DerechaExplorarDiv{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0) );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20vh;
+  right: 0px;
+  width: 6vw;
+  height: 10vh;
+  border-radius: 30%;
+  z-index: 50;
+}
+.DerechaExplorarDiv:hover{
+  background-image: linear-gradient(to left,rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0.9) ,rgba(0, 0, 0, 1)  );
+}
+.DerechaExplorar{
+  color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+.CarruselExplorador::-webkit-scrollbar{
+  display: none;
+}
+.estrellasContainer{
+  padding: 0.5vh 0.5vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+}
+.estrellas{
+  color: gold;
+}
 /* MENU */
 .menu {
   background-color: #350a80;
