@@ -9,13 +9,13 @@ export function Renderizar({resultado, valor}) {
                 console.log('soy pepli',peli);
                 return (
                     <section key={peli.id} className="busqueda-peli">
-                    <img src={"https://image.tmdb.org/t/p/original/"+peli.poster_path} className="busqueda-poster"/>
-                    <h3> {peli.title} </h3>
-                    <div>
-                        <p> {peli.vote_average}★ </p>
-                        <p> {peli.release_date} </p>
-                    </div>
-                    <button>¡VER!</button>
+                        <img src={"https://image.tmdb.org/t/p/original/"+peli.poster_path} className="busqueda-poster"/>
+                        <h3> {peli.title} </h3>
+                        <div>
+                            <p> {peli.vote_average}★ </p>
+                            <p> {peli.release_date} </p>
+                        </div>
+                        <button className="busqueda-boton">¡VER!</button>
                     </section>
                 )
             })}
