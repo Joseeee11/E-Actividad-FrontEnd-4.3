@@ -24,7 +24,7 @@ class comentariosControllers {
             const campos = {nombre, descripcion, idpeli, calificacion};
             console.log('agregar:', campos)
             await comentariosModel.create(campos);
-            res.send('Se agregó correctamente').status('200'); 
+            res.json({"agregado": "se agregado"}).status('200');  
         } catch (error) {
             console.log('Hubo algún error', error); 
             res.status('404').json({"error":error})
