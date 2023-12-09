@@ -2,7 +2,6 @@ import {useState} from 'react';
 
 //importamos componentes
 import {Header} from './Header';
-import {Inicio} from './Inicio';
 import {Buscar} from './Buscador';
 import ContactForm from './Form';
 import Footer from './Footer';
@@ -20,8 +19,8 @@ export function Main() {
     //MUCHACHOS cuando tengan sus componentes colocarlos aquí siguiendo esto: " {activo === 1 ? <Inicio/> : activo === 2 ? <Buscar/> : activo === 3 ? <Explorar/> : Contacto } "
     return <>
         <Header enlaces={enlaces} />
-        <section>
-            {activo === 1 ?  <><Info/> <ContactForm/></> : activo ===2 ? <Buscar/>: <RenderGéneros/> }
+        <section id="contenido">
+            {activo === 1 ?  <><Info/> <ContactForm/></> : activo === 2 ? <Buscar/>: <RenderGéneros/> }
         </section>
         <Footer/>
     </>
