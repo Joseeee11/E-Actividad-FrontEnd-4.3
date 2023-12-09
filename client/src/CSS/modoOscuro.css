@@ -13,6 +13,7 @@ body.modoOscuro{
 }
 
 .modoOscuro .footer {
+    background: linear-gradient(to right, #01000D, #26075d, #01000D);
     background-color: #01000D;
 }
 

@@ -1,0 +1,123 @@
+#contenido {
+    min-height: 51vh;
+}
+
+/* BARRA DE BUSQUEDA */
+.barra-buscar {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.barra-buscar input {
+    width: 50%;
+    height: 8vh;
+
+    border: 2px solid #450da6fc;
+    border-radius: 20px;
+    background-color: #450da6cb;
+
+    padding: 0 3vh;
+    color: #f2f2f2;
+    font-size: 2.5vh;
+}
+.barra-buscar input::placeholder{
+    color: #c7c7c7;
+}
+.busqueda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5vh;
+    justify-content: center;
+    
+    margin: 6vh 4vh;
+}
+.busqueda-peli {
+    background-color: #454e8f;
+    padding: 2vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 50vh;
+    width: 35vh;
+
+}
+.busqueda-poster {
+    width: 10vh;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 30vh;
+    background: linear-gradient(to right, #26075d, #450ea3, #26075d);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+
+    padding: 2vh;
+    text-align: center;
+    color: #f2f2f2;
+}
+.footer-titulo {
+    font-size: 3.3vh;
+    padding: 15px;
+}
+.footer-text{
+    color: #949494;
+}
+.footer-redes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 20px;
+}
+.footer-redes img {
+    width: 5vh;
+}
+
+/* LOADER */
+.loading {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  /* margin-top: 30vh; */
+  margin: 20vh auto;
+}
+.loading div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: loaderLoading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #8899F2 transparent transparent transparent;
+}
+.loading div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loading div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loading div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes loaderLoading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
