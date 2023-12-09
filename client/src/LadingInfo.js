@@ -1,5 +1,4 @@
 import React from 'react';
-import "./CSS/Lading.css"
 
 const Info = () => {
  return (

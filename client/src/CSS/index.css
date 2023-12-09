@@ -298,6 +298,12 @@ header {
   border: 1px solid #26075d;
   background-color: #5e2aa3;
 }
+.mensaje {
+  font-size: 3vh;
+  text-align: center;
+  margin-top: 8vh;
+  color: #000000;
+}
 
 /* FOOTER */
 .footer {

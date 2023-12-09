@@ -24,4 +24,7 @@ body.modoOscuro{
 .modoOscuro .info-container{
     background-color: #120135;
 }
+.modoOscuro .mensaje {
+    color: #f2f2f2;
+}
 

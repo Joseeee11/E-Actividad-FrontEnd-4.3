@@ -2,8 +2,6 @@ import { useState , useEffect } from "react";
 
 import { APIbuscar } from "./API";
 import { Renderizar } from "./RenderBusqueda";
-import './CSS/loader.css';
-
 
 export function Buscar() {
     // console.log('buscaaar')
@@ -51,9 +49,7 @@ export function Buscar() {
                 <div></div>
             </div> 
             :
-            <div className="busqueda">
-                <Renderizar resultado={resultado} valor={valor} />
-            </div>
+            <Renderizar resultado={resultado} valor={valor} />
         }
     </>
 }

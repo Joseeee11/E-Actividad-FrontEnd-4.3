@@ -4,7 +4,6 @@ import React from 'react';
 import IconoFacebook from './media/iconos/facebook-f.svg';
 import IconoTwitter from './media/iconos/x-twitter.svg';
 import IconoInstagram from './media/iconos/instagram.svg';
-import "./CSS/Lading.css"
 
 const Footer = () => {
  return (
