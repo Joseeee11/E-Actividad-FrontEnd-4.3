@@ -27,8 +27,7 @@ export function Header({enlaces}) {
             <button onClick={() => MenuCerrar()}> <img src={IconoX} alt='Cerrar Menú'/> </button>
             <h3 onClick={()=>enlaces(1)}>Inicio</h3>
             <h3 onClick={()=>enlaces(2)}>Buscar</h3>
-            <h3>Explorar</h3>
-            <h3>Contacto</h3>
+            <h3 onClick={()=>enlaces(3)}>Explorar</h3>
         </section>
         {menu === true ? <div className='fondo'></div> : <></>}
     </header>
